@@ -61,7 +61,7 @@ describe("the JavaScript language", function() {
       function x() {}
 
       expect(typeof x).toBe("function");
-      //expect(typeof(xxx)).toBe('...');
+      expect(typeof xxx).toBe("undefined");
     });
 
     it("has arrays and they can contain anything inside", function() {
@@ -70,13 +70,11 @@ describe("the JavaScript language", function() {
       arr[9] = 6;
       var matrix = [["a", "b", "c"], ["d", "e", "f"], ["g", 7, 8]];
 
-      /*
       expect(arr[1]).toEqual();
       expect(arr[4]).toEqual();
       expect(arr[6]).toEqual();
       expect(arr[9]).toEqual();
       expect(matrix[0][2]).toEqual();
-      */
     });
 
     it("may contain functions inside arrays", function() {
