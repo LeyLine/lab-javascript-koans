@@ -86,7 +86,7 @@ describe("the JavaScript language", function() {
         }
       ];
 
-      //expect(arr[2](1)).toEqual();
+      expect(arr[2](1)).toEqual(4);
     });
 
     it("concatenate arrays - well, kind of", function() {
