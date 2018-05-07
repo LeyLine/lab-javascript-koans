@@ -107,10 +107,10 @@ describe("the JavaScript language", function() {
       var a = [1, 2, 3];
       var b = ["x", "y", "z"];
 
-      //expect(1 + a).toEqual();
-      //expect(a + 1).toEqual();
-      //expect(1 + b).toEqual();
-      //expect(true + a).toEqual();
+      expect(1 + a).toEqual("1a");
+      expect(a + 1).toEqual("a1");
+      expect(1 + b).toEqual("1b");
+      expect(true + a).toEqual(false);
     });
 
     it("can't compare arrays", function() {
